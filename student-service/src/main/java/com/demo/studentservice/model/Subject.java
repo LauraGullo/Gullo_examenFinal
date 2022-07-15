@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Subject {
+    private int id;
     private String name;
     private String professor;
     private int studentId;
