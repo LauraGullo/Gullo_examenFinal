@@ -37,7 +37,7 @@ public class SubjectController {
         return ResponseEntity.ok(subjectNew);
     }
 
-    @GetMapping("/byStudent/{userId}")
+    @GetMapping("/byStudent/{studentId}")
     public ResponseEntity<List<Subject>> getByStudentId(@PathVariable("studentId") int studentId) {
         List<Subject> subjects = subjectService.byStudentId(studentId);
         return ResponseEntity.ok(subjects);

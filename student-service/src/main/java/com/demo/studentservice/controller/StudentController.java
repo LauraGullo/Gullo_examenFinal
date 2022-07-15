@@ -39,7 +39,7 @@ public class StudentController {
         return ResponseEntity.ok(userNew);
     }
 
-    @GetMapping("/cars/{studentId}")
+    @GetMapping("/subjects/{studentId}")
     public ResponseEntity<List<Subject>> getSubject(@PathVariable("studentId") int studentId) {
         Student student = studentService.getStudentById(studentId);
         if(student == null)
